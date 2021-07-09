@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "API_Framework", "API_Framework.vcxproj", "{A1FBB25D-50F8-4E9C-A6CC-E5CA777FE52D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Editor", "..\Editor\Editor.vcxproj", "{940B03C8-9353-47F4-A355-CDFD2B095708}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Headers", "00.Headers", "{FCCEA3C1-3FCB-4D59-86FD-CA89A4984DB5}"
+	ProjectSection(SolutionItems) = preProject
+		..\Headers\Include.h = ..\Headers\Include.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Include", "Include", "{30CFCDF5-C746-4A2E-A148-1A0F9CB754C7}"
+	ProjectSection(SolutionItems) = preProject
+		..\Headers\AbstractFactory.h = ..\Headers\AbstractFactory.h
+		..\Headers\Define.h = ..\Headers\Define.h
+		..\Headers\Enum.h = ..\Headers\Enum.h
+		..\Headers\Extern.h = ..\Headers\Extern.h
+		..\Headers\Function.h = ..\Headers\Function.h
+		..\Headers\Include.h = ..\Headers\Include.h
+		..\Headers\Struct.h = ..\Headers\Struct.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1FBB25D-50F8-4E9C-A6CC-E5CA777FE52D}.Debug|x64.ActiveCfg = Debug|x64
+		{A1FBB25D-50F8-4E9C-A6CC-E5CA777FE52D}.Debug|x64.Build.0 = Debug|x64
+		{A1FBB25D-50F8-4E9C-A6CC-E5CA777FE52D}.Debug|x86.ActiveCfg = Debug|Win32
+		{A1FBB25D-50F8-4E9C-A6CC-E5CA777FE52D}.Debug|x86.Build.0 = Debug|Win32
+		{A1FBB25D-50F8-4E9C-A6CC-E5CA777FE52D}.Release|x64.ActiveCfg = Release|x64
+		{A1FBB25D-50F8-4E9C-A6CC-E5CA777FE52D}.Release|x64.Build.0 = Release|x64
+		{A1FBB25D-50F8-4E9C-A6CC-E5CA777FE52D}.Release|x86.ActiveCfg = Release|Win32
+		{A1FBB25D-50F8-4E9C-A6CC-E5CA777FE52D}.Release|x86.Build.0 = Release|Win32
+		{940B03C8-9353-47F4-A355-CDFD2B095708}.Debug|x64.ActiveCfg = Debug|x64
+		{940B03C8-9353-47F4-A355-CDFD2B095708}.Debug|x64.Build.0 = Debug|x64
+		{940B03C8-9353-47F4-A355-CDFD2B095708}.Debug|x86.ActiveCfg = Debug|Win32
+		{940B03C8-9353-47F4-A355-CDFD2B095708}.Debug|x86.Build.0 = Debug|Win32
+		{940B03C8-9353-47F4-A355-CDFD2B095708}.Release|x64.ActiveCfg = Release|x64
+		{940B03C8-9353-47F4-A355-CDFD2B095708}.Release|x64.Build.0 = Release|x64
+		{940B03C8-9353-47F4-A355-CDFD2B095708}.Release|x86.ActiveCfg = Release|Win32
+		{940B03C8-9353-47F4-A355-CDFD2B095708}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30CFCDF5-C746-4A2E-A148-1A0F9CB754C7} = {FCCEA3C1-3FCB-4D59-86FD-CA89A4984DB5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {393BF010-7F7B-4F35-AA9A-2C7E5A142A53}
+	EndGlobalSection
+EndGlobal
