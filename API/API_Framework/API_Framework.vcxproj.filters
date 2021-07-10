@@ -64,8 +64,8 @@
     <Filter Include="소스 파일\98.Manager\03.KeyMgr">
       <UniqueIdentifier>{a6a235fb-a11e-4d18-8f58-1478092f6b3c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\01.Obj\05.Boss">
-      <UniqueIdentifier>{d6da9751-4c40-4a0e-a815-6d69489bbea6}</UniqueIdentifier>
+    <Filter Include="소스 파일\01.Obj\01.Bullet\04.Misale Bullet">
+      <UniqueIdentifier>{b9ab7efa-13e9-4280-9599-4850e58f14f7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -126,8 +126,8 @@
     <ClInclude Include="KeyMgr.h">
       <Filter>소스 파일\98.Manager\03.KeyMgr</Filter>
     </ClInclude>
-    <ClInclude Include="Boss.h">
-      <Filter>소스 파일\01.Obj\05.Boss</Filter>
+    <ClInclude Include="MisaleBullet.h">
+      <Filter>소스 파일\01.Obj\01.Bullet\04.Misale Bullet</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -179,8 +179,8 @@
     <ClCompile Include="KeyMgr.cpp">
       <Filter>소스 파일\98.Manager\03.KeyMgr</Filter>
     </ClCompile>
-    <ClCompile Include="Boss.cpp">
-      <Filter>소스 파일\01.Obj\05.Boss</Filter>
+    <ClCompile Include="MisaleBullet.cpp">
+      <Filter>소스 파일\01.Obj\01.Bullet\04.Misale Bullet</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

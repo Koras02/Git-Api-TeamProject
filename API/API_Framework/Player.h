@@ -20,27 +20,26 @@ public:
 
 private:
 	void Key_Check();
-	void Jumping();
-
+ 
+	 
 private:
-	template<typename T>
-	CObj* Create_Bullet()
+	/*template <typename T>
+	CObj* Create_Misale()
 	{
 		return CAbstractFactory<T>::Create((float)m_tPosin.x, (float)m_tPosin.y, m_fAngle);
-	}
-	CObj* Create_Shield();
+	}*/
+ 
+   
+	
 
 private:
 
 	POINT m_tPosin;
 	float m_fPosinDis;
 
-	bool m_bJump ;
-	float m_fJumpPower;
-	float m_fJumpTime;
-	float m_fJumpY;
-
-
+	POINT m_tMisale;
+	float m_fMisaleDis;
+ 
 
 };
 

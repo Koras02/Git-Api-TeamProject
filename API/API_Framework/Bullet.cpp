@@ -16,6 +16,8 @@ CBullet::~CBullet()
 
 void CBullet::Initialize()
 {
+	m_tInfo.fX = 200.f;
+	m_tInfo.fY = 400.f;
 	m_tInfo.iCX = 20;
 	m_tInfo.iCY = 20;
 

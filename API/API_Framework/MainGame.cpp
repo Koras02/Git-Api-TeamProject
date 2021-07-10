@@ -6,7 +6,11 @@
 #include "Mouse.h"
 #include "ObjMgr.h"
 #include "LineMgr.h"
-#include "Boss.h"
+#include "MisaleBullet.h"
+#include "Bullet.h"
+#include "KeyMgr.h"
+ 
+
 CMainGame::CMainGame()
 	: m_iFPS(0),
 	m_hDC(NULL),
@@ -24,9 +28,10 @@ void CMainGame::Initialize()
 {
 	m_hDC = GetDC(g_hWnd);
 
-	CObjMgr::Get_Instance()->Add_Object(CAbstractFactory<CPlayer>::Create(), OBJID::PLAYER);
-	CObjMgr::Get_Instance()->Add_Object(CAbstractFactory<CBoss>::Create(), OBJID::BOSS);
-
+	CObj* pObj = CAbstractFactory<CPlayer>::Create();
+	CObjMgr::Get_Instance()->Add_Object(CAbstractFactory<CPlayer>::Create(pObj), OBJID::PLAYER);
+ 
+ 
 	CLineMgr::Get_Instance()->Initialize();
 
 
@@ -55,9 +60,9 @@ void CMainGame::Render()
 
 
 #ifdef _DEBUG
-	//TCHAR szBuff[32] = L"";
-	//swprintf_s(szBuff, L"총알개수: %d", m_listObj[OBJID::BULLET].size());
-	//TextOut(m_hDC, 50, 50, szBuff, lstrlen(szBuff));
+	TCHAR szBuff[32] = L"";
+	swprintf_s(szBuff, L"총알개수: %d", m_listObj[OBJID::BULLET].size());
+	TextOut(m_hDC, 50, 50, szBuff, lstrlen(szBuff));
 
 	++m_iFPS;
 	if (m_dwFPSTime + 1000 < GetTickCount64())
@@ -79,9 +84,9 @@ void CMainGame::Render()
 	swprintf_s(szBulletPos, L"마우스위치: %d %d", pt.x, pt.y);
 	TextOut(m_hDC, 200, 50, szBulletPos, lstrlen(szBulletPos));
 
-	//TCHAR szBulletPos1[32] = L"";
-	//swprintf_s(szBulletPos1, L"저장된선개수: %d", CLineMgr::Get_Instance()->Get_LineSize());
-	//TextOut(m_hDC, 400, 50, szBulletPos1, lstrlen(szBulletPos1));
+	TCHAR szBulletPos1[32] = L"";
+	swprintf_s(szBulletPos1, L"저장된선개수: %d", CLineMgr::Get_Instance()->Get_LineSize());
+	TextOut(m_hDC, 400, 50, szBulletPos1, lstrlen(szBulletPos1));
 
 
 

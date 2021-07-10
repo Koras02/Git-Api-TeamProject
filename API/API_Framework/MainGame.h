@@ -21,7 +21,7 @@ public:
 private:
 	HDC m_hDC;
 
-	//CObj* m_pPlayer;
+ 
 
 	list<CObj*> m_listObj[OBJID::END];
 

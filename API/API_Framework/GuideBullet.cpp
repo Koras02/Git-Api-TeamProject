@@ -17,6 +17,7 @@ void CGuideBullet::Initialize()
     m_tInfo.iCY = 50;
 
     m_fSpeed = 5.f;
+    
 }
 
 int CGuideBullet::Update()

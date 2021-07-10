@@ -19,11 +19,7 @@ public:
 	virtual void Render(HDC _DC) override;
 	virtual void Release() override;
 
-private:
-
-public:
-	void Set_Dir(BULLET::DIR _eDir) { m_eDir = _eDir; }
-
+ 
 private:
 	BULLET::DIR m_eDir;
 };

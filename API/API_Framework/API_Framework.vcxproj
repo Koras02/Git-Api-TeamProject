@@ -149,7 +149,7 @@
   <ItemGroup>
     <ClInclude Include="API_Framework.h" />
     <ClInclude Include="Bullet.h" />
-    <ClInclude Include="Boss.h" />
+    <ClInclude Include="MisaleBullet.h" />
     <ClInclude Include="CollisionMgr.h" />
     <ClInclude Include="GuideBullet.h" />
     <ClInclude Include="KeyMgr.h" />
@@ -171,7 +171,7 @@
   <ItemGroup>
     <ClCompile Include="API_Framework.cpp" />
     <ClCompile Include="Bullet.cpp" />
-    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="MisaleBullet.cpp" />
     <ClCompile Include="CollisionMgr.cpp" />
     <ClCompile Include="GuideBullet.cpp" />
     <ClCompile Include="KeyMgr.cpp" />
