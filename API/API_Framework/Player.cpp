@@ -38,8 +38,8 @@ void CPlayer::Initialize()
 
 int CPlayer::Update()
 {
-	//if (m_bDead)
-	//	return OBJ_DEAD;
+	if (m_bDead)
+		return OBJ_DEAD;
 
 	Key_Check();
  

@@ -67,6 +67,15 @@
     <Filter Include="소스 파일\01.Obj\01.Bullet\04.Misale Bullet">
       <UniqueIdentifier>{b9ab7efa-13e9-4280-9599-4850e58f14f7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\01.Obj\05.Boss">
+      <UniqueIdentifier>{4418d68e-74f9-4e1e-88fe-82bec68d06f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\01.Bullet\Boss_Bullet">
+      <UniqueIdentifier>{818929d9-0f3e-4ba9-8053-a993d62d5f7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\01.Bullet\Boss_Bullet1">
+      <UniqueIdentifier>{bc60e296-7299-4486-8911-a67f108aaa73}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -129,6 +138,15 @@
     <ClInclude Include="MisaleBullet.h">
       <Filter>소스 파일\01.Obj\01.Bullet\04.Misale Bullet</Filter>
     </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>소스 파일\01.Obj\05.Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="BossBullet.h">
+      <Filter>소스 파일\01.Obj\01.Bullet\Boss_Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="BossBullet1.h">
+      <Filter>소스 파일\01.Obj\01.Bullet\Boss_Bullet1</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="API_Framework.cpp">
@@ -181,6 +199,15 @@
     </ClCompile>
     <ClCompile Include="MisaleBullet.cpp">
       <Filter>소스 파일\01.Obj\01.Bullet\04.Misale Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="BossBullet.cpp">
+      <Filter>소스 파일\01.Obj\01.Bullet\Boss_Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>소스 파일\01.Obj\05.Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="BossBullet1.cpp">
+      <Filter>소스 파일\01.Obj\01.Bullet\Boss_Bullet1</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

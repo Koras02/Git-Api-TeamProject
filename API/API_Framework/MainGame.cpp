@@ -9,8 +9,8 @@
 #include "MisaleBullet.h"
 #include "Bullet.h"
 #include "KeyMgr.h"
- 
-
+#include "Boss.h"
+#include "BossBullet.h"
 CMainGame::CMainGame()
 	: m_iFPS(0),
 	m_hDC(NULL),
@@ -28,13 +28,10 @@ void CMainGame::Initialize()
 {
 	m_hDC = GetDC(g_hWnd);
 
-	CObj* pObj = CAbstractFactory<CPlayer>::Create();
-	CObjMgr::Get_Instance()->Add_Object(CAbstractFactory<CPlayer>::Create(pObj), OBJID::PLAYER);
- 
- 
+	CObjMgr::Get_Instance()->Add_Object(CAbstractFactory<CPlayer>::Create(), OBJID::PLAYER);
+	CObjMgr::Get_Instance()->Add_Object(CAbstractFactory<CBoss>::Create(), OBJID::BOSS);
+
 	CLineMgr::Get_Instance()->Initialize();
-
-
 
 
 }
@@ -48,7 +45,6 @@ void CMainGame::Update()
 void CMainGame::Late_Update()
 {
 	CObjMgr::Get_Instance()->Late_Update();
-
 }
 
 void CMainGame::Render()

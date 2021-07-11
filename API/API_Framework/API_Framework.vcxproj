@@ -148,6 +148,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="API_Framework.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="BossBullet.h" />
+    <ClInclude Include="BossBullet1.h" />
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="MisaleBullet.h" />
     <ClInclude Include="CollisionMgr.h" />
@@ -170,6 +173,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="API_Framework.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="BossBullet.cpp" />
+    <ClCompile Include="BossBullet1.cpp" />
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="MisaleBullet.cpp" />
     <ClCompile Include="CollisionMgr.cpp" />

@@ -22,23 +22,23 @@ void CObjMgr::Add_Object(CObj* _pObj, OBJID::ID _eID)
 void CObjMgr::Update()
 {
 	for (int i = 0; i < OBJID::END; ++i)
-	{
-		auto iter = m_listObj[i].begin();
-		for (; iter != m_listObj[i].end();)
 		{
-			int iEvent = (*iter)->Update();
-			if (OBJ_DEAD == iEvent)
+			auto iter = m_listObj[i].begin();
+			for (; iter != m_listObj[i].end();)
 			{
-				SAFE_DELETE(*iter);
-				iter = m_listObj[i].erase(iter);
+				int iEvent = (*iter)->Update();
+				if (OBJ_DEAD == iEvent)
+				{
+					SAFE_DELETE(*iter);
+					iter = m_listObj[i].erase(iter);
+				}
+				else
+					++iter;
 			}
-			else
-				++iter;
 		}
-	}
-
+	
 	CCollisionMgr::Collision_Rect(m_listObj[OBJID::BULLET], m_listObj[OBJID::MONSTER]);
-	CCollisionMgr::Collision_Rect(m_listObj[OBJID::PLAYER], m_listObj[OBJID::MONSTER]);
+	CCollisionMgr::Collision_Rect(m_listObj[OBJID::PLAYER], m_listObj[OBJID::BOSS]);
 	CCollisionMgr::Collision_Rect(m_listObj[OBJID::PLAYER], m_listObj[OBJID::MISALE]);
 
  
