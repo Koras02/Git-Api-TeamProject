@@ -20,7 +20,16 @@ public:
 	virtual void Render(HDC _DC) override;
 	virtual void Release() override;
  
- 
+private:
+	float m_fOriginfX;
+	float m_fOriginfY;
+	float m_fAngleSpeed;
+
+	POINT m_tPosin;
+	float m_fPosinAngle;
+
+private:
+	DWORD _dwWord;
 
 };
 

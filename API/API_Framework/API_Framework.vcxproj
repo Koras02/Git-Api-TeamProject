@@ -168,6 +168,7 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="ScrewBullet.h" />
+    <ClInclude Include="ScrollMgr.h" />
     <ClInclude Include="Shield.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -196,6 +197,7 @@
     </ClCompile>
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="ScrewBullet.cpp" />
+    <ClCompile Include="ScrollMgr.cpp" />
     <ClCompile Include="Shield.cpp" />
   </ItemGroup>
   <ItemGroup>

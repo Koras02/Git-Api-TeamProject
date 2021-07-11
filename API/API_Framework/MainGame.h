@@ -21,9 +21,6 @@ public:
 private:
 	HDC m_hDC;
 
- 
-
-	list<CObj*> m_listObj[OBJID::END];
 
 	int m_iFPS;
 	DWORD  m_dwFPSTime;

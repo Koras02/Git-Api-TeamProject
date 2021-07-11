@@ -20,6 +20,9 @@ public:
 public:
 	CObj* Get_Player() { return m_listObj[OBJID::PLAYER].front(); }
 	CObj* Get_Target(CObj* _pObj, OBJID::ID _eID);
+	size_t Get_MonsterSize() { return m_listObj[OBJID::MONSTER].size(); }
+public:
+	size_t Get_BulletSize() { return m_listObj[OBJID::BULLET].size(); }
 
 public:
 	static CObjMgr* Get_Instance()
