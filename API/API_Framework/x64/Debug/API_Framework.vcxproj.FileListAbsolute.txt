@@ -1,1 +1,2 @@
-C:\Users\PC\Desktop\Git-Api-TeamProject\trunk\API\API_Framework\x64\Debug\API_Framework.exe
+C:\Users\wjdgh\OneDrive\바탕 화면\API\API_Framework\x64\Debug\API_Framework.exe
+C:\Users\wjdgh\OneDrive\바탕 화면\Taeam-API\trunk\API\API_Framework\x64\Debug\API_Framework.exe

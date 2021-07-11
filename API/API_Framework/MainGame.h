@@ -26,7 +26,7 @@ private:
 	list<CObj*> m_listObj[OBJID::END];
 
 	int m_iFPS;
-	DWORD64 m_dwFPSTime;
+	DWORD  m_dwFPSTime;
 
 	
 

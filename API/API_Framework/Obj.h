@@ -39,7 +39,7 @@ protected:
 	float m_fAngle;
 	float m_fDis;
 	float m_fMisale;
-
+ 
 	bool m_bDead;
 
 	CObj* m_pTarget;

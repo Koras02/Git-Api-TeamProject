@@ -4,8 +4,8 @@
 #define __PLAYER_H__
 
 #include "Obj.h"
-class CPlayer :
-    public CObj
+class CPlayerIDLE;
+class CPlayer:public CObj
 {
 public:
     CPlayer();
@@ -21,17 +21,7 @@ public:
 private:
 	void Key_Check();
  
-	 
-private:
-	/*template <typename T>
-	CObj* Create_Misale()
-	{
-		return CAbstractFactory<T>::Create((float)m_tPosin.x, (float)m_tPosin.y, m_fAngle);
-	}*/
- 
-   
 	
-
 private:
 
 	POINT m_tPosin;
@@ -39,7 +29,24 @@ private:
 
 	POINT m_tMisale;
 	float m_fMisaleDis;
+
+	POINT m_tPlayerIDLE;
+	float m_fPlayerIDLEDIS;
+     
+	POINT m_tScrew;
+	float m_fScrewDis;
  
+
+private:
+	int Leg1;
+	int Leg2;
+	
+	RECT rec[10];
+	RECT _rec;
+ 
+
+	CPlayerIDLE*  m_pPlayerIDLE;
+
 
 };
 

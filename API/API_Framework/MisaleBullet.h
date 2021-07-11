@@ -22,6 +22,7 @@ private:
 	POINT  m_tCenterMis;
 	float m_fCenterAngle;
 	float m_fCenterSpeed;
+	
 
 	bool m_bStart;
 
